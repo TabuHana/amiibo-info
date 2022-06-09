@@ -3,25 +3,47 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
+import { useState } from "react";
 
 
-const Search = () => {
+
+const Search = ( {onAdd} ) => {
+
+  const [search, setSearch] = useState('')
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+
+    if(!search) {
+      alert('box empty')
+      return
+    }
+
+    onAdd({ search })
+    setSearch('')
+  }
+
   return (
-    <Form>
+    <Form onSubmit={onSubmit}>
       <Row className='searchContainer'>
         <Col xs={1}>
         </Col>
-        <Col sm={4} className='my-3'>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Control placeholder="Search by character name" />
+        <Col sm={6} className='my-3'>
+          <Form.Group>
+            <Form.Control
+              type='text'
+              id='amiiboSearch'
+              aria-describedby='amiiboSearchBox'
+              placeholder="Search by character name"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
           </Form.Group>
         </Col>
         <Col sm={2} className='my-3'>
-          <div className='d-grid'>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
-          </div>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
         </Col>
         <Col xs={1}>
         </Col>

@@ -7,7 +7,7 @@ const Title = ({ title }) => {
 }
 
 Title.defaultProps = {
-  title: 'Amiibfo'
+  title: 'AMIIBFO'
 }
 
 Title.propTypes = {
