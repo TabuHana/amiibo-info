@@ -1,6 +1,7 @@
 import './App.css';
 import { Button, Form, Container, Row, Col, Carousel } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Title from "./components/Title";
 
 // https://amiiboapi.com/api/amiibo/?character=(character name)
 
@@ -10,7 +11,7 @@ function App() {
       <header className="App-header">
         <Container>
           {/* Title Section */}
-          <h1 className='amiibfo'> Amiibfo </h1>
+          <Title />
 
           {/* Carousel Section */}
           <Row>
