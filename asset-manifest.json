@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amiibo-info/static/css/main.329adacc.css",
+    "main.js": "/amiibo-info/static/js/main.d20ef887.js",
+    "static/js/787.190261da.chunk.js": "/amiibo-info/static/js/787.190261da.chunk.js",
+    "index.html": "/amiibo-info/index.html",
+    "main.329adacc.css.map": "/amiibo-info/static/css/main.329adacc.css.map",
+    "main.d20ef887.js.map": "/amiibo-info/static/js/main.d20ef887.js.map",
+    "787.190261da.chunk.js.map": "/amiibo-info/static/js/787.190261da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.329adacc.css",
+    "static/js/main.d20ef887.js"
+  ]
+}
