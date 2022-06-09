@@ -2,6 +2,8 @@ import './App.css';
 import { Button, Form, Container, Row, Col, Carousel } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// https://amiiboapi.com/api/amiibo/?character=(character name)
+
 function App() {
   return (
     <div className="App">
@@ -72,7 +74,7 @@ function App() {
               </Col>
             </Row>
           </Form>
-          
+
           {/* Amiibo display Section */}
           <Row>
             <Col xs={1}>
