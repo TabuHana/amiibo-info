@@ -16,3 +16,8 @@
 .amiibfo {
   font-size: 115px;
 }
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
