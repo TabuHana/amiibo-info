@@ -1,9 +1,10 @@
 import './App.css';
-import { Container, Row, Col, } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Title from './components/Title';
 import Search from './components/Search';
-import Showcase from './components/Showcase'
+import Showcase from './components/Showcase';
+import Display from './components/Display';
 
 // https://amiiboapi.com/api/amiibo/?character=(character name)
 
@@ -22,15 +23,7 @@ function App() {
           <Search />
 
           {/* Amiibo display Section */}
-          <Row>
-            <Col xs={1}>
-            </Col>
-            <Col>
-              Amiibo display location
-            </Col>
-            <Col xs={1}>
-            </Col>
-          </Row>
+          <Display />
 
 
         </Container>
