@@ -1,4 +1,3 @@
-import '../App.css';
 import PropTypes from "prop-types";
 
 const Title = ({ title }) => {

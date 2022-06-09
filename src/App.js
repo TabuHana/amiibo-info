@@ -1,7 +1,8 @@
 import './App.css';
 import { Button, Form, Container, Row, Col, Carousel } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Title from "./components/Title";
+import Title from './components/Title';
+import Search from './components/Search';
 
 // https://amiiboapi.com/api/amiibo/?character=(character name)
 
@@ -55,26 +56,7 @@ function App() {
           </Row>
 
           {/* Search Form */}
-          <Form>
-            <Row>
-              <Col xs={1}>
-              </Col>
-              <Col sm={6} className='my-3'>
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Control placeholder="Search by character name" />
-                </Form.Group>
-              </Col>
-              <Col sm={3} className='my-3'>
-                <div className='d-grid'>
-                  <Button variant="primary" type="submit">
-                    Submit
-                  </Button>
-                </div>
-              </Col>
-              <Col xs={1}>
-              </Col>
-            </Row>
-          </Form>
+          <Search />
 
           {/* Amiibo display Section */}
           <Row>
