@@ -12,10 +12,25 @@ import { useState } from "react";
 function App() {
   const [title, setTitle] = useState()
 
-  //Search
-  const searchAmiibo = (search) => {
-    console.log(search.search)
-    setTitle(search.search)
+  //search
+  const searchAmiibo = async (search) => {
+    var characterName = search.search
+      let amiiboData = await fetch(`https://amiiboapi.com/api/amiibo/?character=${characterName}`)
+
+      if(amiiboData.status == 200) {
+        let data = await amiiboData.json()
+        console.log(data)
+        console.log('================')
+        console.log(characterName)
+        setTitle(characterName)
+
+      } else if (amiiboData.status == 404) {
+        console.log('invald')
+        setTitle('Error')
+      }
+
+      
+
   }
 
   return (
@@ -23,7 +38,7 @@ function App() {
       <header className="App-header">
         <Container>
           {/* Title Section */}
-          <Title title={title}/>
+          <Title title={title} />
 
           {/* Carousel Section */}
           <Showcase />
