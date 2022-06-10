@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Press Start 2P', serif, sans-serif;
 }
 
 .App-header {
@@ -20,4 +21,43 @@
 .searchContainer {
   display: flex;
   justify-content: center;
+}
+
+.amiibo-card.card {
+  border: none;
+  background-color: #222;
+}
+
+.amiibo-card.card-body {
+  border: none;
+  background: #222;
+  padding: 0;
+}
+
+.amiibo-card-header {
+  padding: 0;
+  border: none;
+}
+
+.card-img.amiibo-img {
+  max-width: 30%;
+  height: auto;
+}
+
+.amiibo-card-title {
+  font-size: 60px;
+}
+
+.card-header {
+  padding: 0px;
+}
+
+.amiibo-card-header.card-header {
+  border: none;
+  padding: 0;
+}
+
+.amiibo-sub {
+  opacity: 0.5;
+  font-size: small;
 }

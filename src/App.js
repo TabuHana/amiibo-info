@@ -11,22 +11,25 @@ import { useState } from "react";
 
 function App() {
   const [title, setTitle] = useState()
+  const [amiibo, setAmiibo] = useState()
 
   //search
   const searchAmiibo = async (search) => {
-    var characterName = search.search
-      let amiiboData = await fetch(`https://amiiboapi.com/api/amiibo/?character=${characterName}`)
+    let characterName = search.search.toUpperCase()
+      let amiiboAPI = await fetch(`https://amiiboapi.com/api/amiibo/?character=${characterName}`)
 
-      if(amiiboData.status == 200) {
-        let data = await amiiboData.json()
-        console.log(data)
-        console.log('================')
-        console.log(characterName)
+      if(amiiboAPI.status === 200) {
+        let data = await amiiboAPI.json()
+        let amiiboData = data.amiibo
+        setAmiibo(amiiboData)
         setTitle(characterName)
 
-      } else if (amiiboData.status == 404) {
+      } else if (amiiboAPI.status === 404) {
         console.log('invald')
         setTitle('Error')
+      } else {
+        console.log("Something didn't go right... I just don't know what")
+        setTitle('Wha...')
       }
 
       
@@ -47,7 +50,7 @@ function App() {
           <Search onAdd={searchAmiibo} />
 
           {/* Amiibo display Section */}
-          <Display />
+          <Display amiibo={amiibo}/>
 
 
         </Container>
