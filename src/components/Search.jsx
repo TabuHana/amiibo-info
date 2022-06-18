@@ -42,7 +42,7 @@ const Search = ( {onAdd} ) => {
         </Col>
         <Col sm={2} className='my-3'>
           <Button variant="primary" type="submit">
-            Submit
+            Search
           </Button>
         </Col>
         <Col xs={1}>

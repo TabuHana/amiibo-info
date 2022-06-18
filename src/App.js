@@ -44,7 +44,7 @@ function App() {
           <Title title={title} />
 
           {/* Carousel Section */}
-          <Showcase />
+          {/* <Showcase /> */}
 
           {/* Search Form */}
           <Search onAdd={searchAmiibo} />
