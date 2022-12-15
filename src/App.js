@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from "react-bootstrap/Container";
 import Title from './components/Title';
 import Search from './components/Search';
-import Showcase from './components/Showcase';
 import Display from './components/Display';
 
 import { useState } from "react";
@@ -42,9 +41,6 @@ function App() {
         <Container>
           {/* Title Section */}
           <Title title={title} />
-
-          {/* Carousel Section */}
-          {/* <Showcase /> */}
 
           {/* Search Form */}
           <Search onAdd={searchAmiibo} />
