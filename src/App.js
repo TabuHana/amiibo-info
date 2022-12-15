@@ -1,6 +1,3 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from "react-bootstrap/Container";
 import Title from './components/Title';
 import Search from './components/Search';
 import Display from './components/Display';
