@@ -1,8 +1,7 @@
-import Title from './components/Title';
-import Search from './components/Search';
-import Display from './components/Display';
-
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "./components/layouts/Footer";
+import Navbar from './components/layouts/Navbar';
 // https://amiiboapi.com/api/amiibo/?character=(character name)
 
 function App() {
@@ -33,30 +32,20 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Container>
-          {/* Title Section */}
-          <Title title={title} />
+    <Router>
+    <div className="flex flex-col justify-between h-screen">
+      <Navbar />
 
-          {/* Search Form */}
-          <Search onAdd={searchAmiibo} />
+      <main className="container mx-auto px-3 pb-12">
+        {/* @todo - add home, about, amiibo, 404  + routes */}
+      </main>
 
-          {/* Amiibo display Section */}
-          <Display amiibo={amiibo}/>
-
-
-        </Container>
-
-      </header>
+      <Footer />
     </div>
+    </Router>
   );
 }
 
 export default App;
 
-
-/*
-To do-
-Title card, form, button and amiibo display components
-*/
+// @todo - switch to sass, better for resume :(
