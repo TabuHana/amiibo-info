@@ -4,8 +4,6 @@
 
 ## Description
 
-This application is a personal project I designed to help a store owner manage their store. This content management system is created using React and Node.js with TailwindCSS for styling. I also utilized chartjs in react-chartjs-2 to get the responsive graphs. This project has been a test of will and knowledge for me. Getting it to where it is now was no easy task but ultimately I have come out a much better programmer.
-
 This application is a re-design of a project I helped build. Amiibo Locator is made to help people find information about amiibos based on character name. This app uses ReactJS for responsiveness and tailwindcss combined with DaisyUI to build its layout. 
 
 The live version of this site can be found [here](https://amiibo-info.vercel.app/)
