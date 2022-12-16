@@ -8,6 +8,13 @@ const AmiiboReducer = (state, action) => {
         loading: false
       };
 
+    case 'GET_ONE':
+      return {
+        ...state,
+        amiibo: action.payload,
+        loading:false
+      }
+
     case 'SET_LOADING':
       return {
         ...state,

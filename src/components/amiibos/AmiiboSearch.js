@@ -3,7 +3,7 @@ import AmiiboContext from "../../context/AmiiboContext";
 
 const AmiiboSearch = () => {
   const [text, setText] = useState('');
-  const { amiibos, clearAmiibo, searchAmiibo } = useContext(AmiiboContext);
+  const { amiibos, clearAmiibo, searchAmiibos } = useContext(AmiiboContext);
 
   const handleChange = (e) => setText(e.target.value);
 
@@ -14,7 +14,7 @@ const AmiiboSearch = () => {
     if (text === '') {
       console.log('Handle Alert ToDo');
     } else {
-      searchAmiibo(text);
+      searchAmiibos(text);
       setText('');
     }
   };

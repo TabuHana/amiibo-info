@@ -21,7 +21,7 @@ function App() {
             <Routes>
               <Route path="/" element={ <Home /> } />
               <Route path="/about" element={ <About /> } />
-              <Route path="/amiibo" element={ <Amiibo /> } />
+              <Route path="/amiibo/:id" element={ <Amiibo /> } />
               <Route path="/notfound" element={ <NotFound /> } />
               <Route path="/*" element={ <NotFound /> } />
             </Routes>
