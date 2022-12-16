@@ -1,18 +1,20 @@
 import { useState, useContext } from "react";
-import AmiiboContext from "../../context/AmiiboContext";
+import AmiiboContext from "../../context/amiibo/AmiiboContext";
+import AlertContext from "../../context/alert/AlertContext";
 
 const AmiiboSearch = () => {
   const [text, setText] = useState('');
-  const { amiibos, clearAmiibo, searchAmiibos } = useContext(AmiiboContext);
+  const { amiibos, clearAmiibos, searchAmiibos } = useContext(AmiiboContext);
+  const { setAlert } = useContext(AlertContext);
 
   const handleChange = (e) => setText(e.target.value);
 
-  const handleClear = () => clearAmiibo();
+  const handleClear = () => clearAmiibos();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text === '') {
-      console.log('Handle Alert ToDo');
+      setAlert('Please Enter a Name', 'error');
     } else {
       searchAmiibos(text);
       setText('');

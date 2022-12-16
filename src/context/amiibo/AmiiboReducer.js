@@ -24,8 +24,22 @@ const AmiiboReducer = (state, action) => {
     case 'CLEAR_AMIIBOS':
       return {
         ...state,
-        amiibos: []
+        amiibos: [],
       };
+
+    case 'CLEAR_SINGLE':
+      return {
+        ...state,
+        amiibo: {},
+      }
+
+    case 'CLEAR_ALL':
+      return {
+        ...state,
+        amiibos: [],
+        amiibo: {},
+        loading: false,
+      }
 
     default:
       return state;
