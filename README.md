@@ -8,7 +8,12 @@ This application is a personal project I designed to help a store owner manage t
 
 This application is a re-design of a project I helped build. Amiibo Locator is made to help people find information about amiibos based on character name. This app uses ReactJS for responsiveness and tailwindcss combined with DaisyUI to build its layout. 
 
-The live version of this site can be found [here](https://amiibo-info-md3q3yw5z-tabuhana.vercel.app/)
+The live version of this site can be found [here](https://amiibo-info.vercel.app/)
+
+The old version of this app can be found [here](https://tabuhana.github.io/amiibo-info/). (Might go down)
+
+The Original version of this app can be found [here](https://bsandfer.github.io/amiibo-locator/)
+
 
 <hr>
 
