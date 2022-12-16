@@ -10,15 +10,7 @@ This application is a re-design of a project I helped build. Amiibo Locator is m
 
 The live version of this site can be found [here](https://amiibo-info-md3q3yw5z-tabuhana.vercel.app/)
 
-
-
-**Table Of Contents**
-
-- [Intro](#description)
-- [Project Setup](#project-setup)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Contributions](#contributions)
+<hr>
 
 If you would like to view some of my journey in the development of this application, check out my blog I created [here](https://daedadev-blog.vercel.app/). Lets dive into the application.
 
