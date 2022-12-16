@@ -8,8 +8,6 @@ This application is a re-design of a project I helped build. Amiibo Locator is m
 
 The live version of this site can be found [here](https://amiibo-info.vercel.app/)
 
-The old version of this site can be found [here](https://tabuhana.github.io/amiibo-info/). (Might go down)
-
 The Original version of this site can be found [here](https://bsandfer.github.io/amiibo-locator/)
 
 
