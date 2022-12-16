@@ -13,16 +13,29 @@ export const AmiiboProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(AmiiboReducer, initialState);
 
-  const searchAmiibo = () => {
-    console.log('Searching')
-  }
+  const searchAmiibo = async (text) => {
+    setLoading();
 
-  const clearAmiibo = () => dispatch({ type: 'CLEAR_AMIIBO' });
+    const response = await fetch(`${ AMIIBO_URL }/?character=${ text }`);
+    if (!response.ok) {
+      console.log('error');
+    } else {
+      const { amiibo } = await response.json();
+
+      dispatch({
+        type: 'GET_AMIIBOS',
+        payload: amiibo,
+      });
+
+    }
+  };
+
+  const clearAmiibo = () => dispatch({ type: 'CLEAR_AMIIBOS' });
 
   const setLoading = () => dispatch({ type: 'SET_LOADING' });
 
   return <AmiiboContext.Provider value={ {
-    amiibos: state.users,
+    amiibos: state.amiibos,
     loading: state.loading,
     clearAmiibo,
     searchAmiibo

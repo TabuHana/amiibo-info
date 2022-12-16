@@ -1,9 +1,11 @@
+import AmiiboResults from "../components/amiibos/AmiiboResults";
 import AmiiboSearch from "../components/amiibos/AmiiboSearch";
 
 const Home = () => {
   return (
-    <div className="flex justify-center">
+    <div>
       <AmiiboSearch />
+      <AmiiboResults />
     </div>
   )
 }

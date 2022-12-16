@@ -4,3 +4,16 @@ const Amiibo = () => {
   )
 }
 export default Amiibo
+
+/* 
+amiiboSeries,
+character,
+gameSeries,
+image,
+name,
+release.au,
+release.eu,
+release.jp,
+release.na,
+type
+*/

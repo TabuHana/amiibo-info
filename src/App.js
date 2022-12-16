@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { AmiiboProvider } from "./context/AmiiboContext";
 import Footer from "./components/layouts/Footer";
 import Navbar from './components/layouts/Navbar';
-import { AmiiboProvider } from "./context/AmiiboContext";
 import About from "./pages/About";
 import Amiibo from "./pages/Amiibo";
 import Home from "./pages/Home";

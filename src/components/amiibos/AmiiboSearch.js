@@ -2,17 +2,17 @@ import { useState, useContext } from "react";
 import AmiiboContext from "../../context/AmiiboContext";
 
 const AmiiboSearch = () => {
-  const amiibo = [];
   const [text, setText] = useState('');
-  const { clearAmiibo, searchAmiibo } = useContext(AmiiboContext);
+  const { amiibos, clearAmiibo, searchAmiibo } = useContext(AmiiboContext);
 
   const handleChange = (e) => setText(e.target.value);
+
   const handleClear = () => clearAmiibo();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text === '') {
-      console.log('Alert');
+      console.log('Handle Alert ToDo');
     } else {
       searchAmiibo(text);
       setText('');
@@ -21,7 +21,7 @@ const AmiiboSearch = () => {
 
 
   return (
-    <div className="grid grid-cols-1 mb-8 gap-8">
+    <div className="grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 mb-8 gap-8">
       <div>
         <form onSubmit={ handleSubmit }>
           <div className="form-control">
@@ -39,7 +39,7 @@ const AmiiboSearch = () => {
           </div>
         </form>
       </div>
-      { amiibo.length > 0 && (
+      { amiibos.length > 0 && (
         <div>
           <button onClick={ handleClear } className="btn btn-ghost btn-lg text-neutral-content">Clear</button>
         </div>
