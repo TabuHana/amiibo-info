@@ -10,15 +10,12 @@ This application is a re-design of a project I helped build. Amiibo Locator is m
 
 The live version of this site can be found [here](https://amiibo-info.vercel.app/)
 
-The old version of this app can be found [here](https://tabuhana.github.io/amiibo-info/). (Might go down)
+The old version of this site can be found [here](https://tabuhana.github.io/amiibo-info/). (Might go down)
 
-The Original version of this app can be found [here](https://bsandfer.github.io/amiibo-locator/)
+The Original version of this site can be found [here](https://bsandfer.github.io/amiibo-locator/)
 
 
 <hr>
-
-If you would like to view some of my journey in the development of this application, check out my blog I created [here](https://daedadev-blog.vercel.app/). Lets dive into the application.
-
 <a name="Project Setup"></a>
 
 ## Project Setup
